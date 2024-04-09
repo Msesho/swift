@@ -1,5 +1,5 @@
 /*The power function */
-func pow(base: Double, radix: Int): Double {
+func pow(base: Double, radix: Int) -> Double {
   var i = 0
   while i < radix {
     base = base * base
@@ -9,7 +9,7 @@ func pow(base: Double, radix: Int): Double {
 }
 
 /*The future value function */
-func futureValue(x: Double, i: Double, n: Int, comp: String): Double {
+func futureValue(x: Double, i: Double, n: Int, comp: String) -> Double {
   let fv = (x * pow(1 + i, n) - x) / i
   switch comp {
     case "monthly":
